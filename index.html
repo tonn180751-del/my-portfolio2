@@ -1,19 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>My Portfolio</title>
-    <style>
-    body {
-        background-color: #f0f8ff;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-        color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | ภูมิพัฒน์ ชอบดี</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+background-size:400% 400%;
+animation:bg 10s infinite alternate;
+color:white;
+padding:40px;
+}
+
+@keyframes bg{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:20px;
+margin-bottom:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+.profile{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:30px;
+}
+
+.profile img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 0 30px #60a5fa;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+h2{
+color:#60a5fa;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+}
+
+ul{
+padding-left:20px;
+line-height:2;
+font-size:18px;
+}
+
+.skill{
+display:inline-block;
+background:#2563eb;
+padding:10px 18px;
+margin:8px;
+border-radius:30px;
+font-weight:bold;
+}
+
+.project{
+background:rgba(255,255,255,.05);
+padding:20px;
+border-left:5px solid #60a5fa;
+border-radius:15px;
+margin-top:20px;
+}
+
+.contact{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
+}
+
+.contact a{
+text-decoration:none;
+color:white;
+background:#2563eb;
+padding:12px 20px;
+border-radius:30px;
+transition:.3s;
+}
+
+.contact a:hover{
+background:#3b82f6;
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+opacity:.8;
+}
+
 </style>
 </head>
+
 <body>
-   #<h1>สวัสดีค่ะ ยินดีต้อนรับสู่พอร์ตของต้นน้ำ</h1> 
-      ##<p>ชื่อ-นามสกุล :ภูมิพัฒน์ ชอบดี</p>
-    ##<p>ตำแหน่ง : นักศึกษา สาขา เทคโนโลยีสารสนเทศ</p>
+
+<div class="container">
+
+<div class="card profile">
+
+<img src="https://github.com/user-attachments/assets/9686fbf0-b5e0-4fe5-879d-8d04b87df660" alt="ต้นน้ำ">
+
+<div>
+
+<h1>👋 นายภูมิพัฒน์ ชอบดี</h1>
+
+<h2>ชื่อเล่น : ต้นน้ำ</h2>
+
+<p>
+💻 ระดับชั้น ปวช.3 <br>
+สาขาเทคโนโลยีสารสนเทศ
+</p>
+
+<br>
+
+<p><b>🧠 คติประจำใจ</b></p>
+
+<h2 style="color:#facc15;">"อยากสูงต้องเขย่ง อยากเก่งต้องขยัน"</h2>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>💻 ทักษะและความสามารถ</h2>
+
+<h3>โปรแกรมที่ใช้งานได้</h3>
+
+<div class="skill">Photoshop</div>
+<div class="skill">Figma</div>
+<div class="skill">Microsoft Word</div>
+<div class="skill">Microsoft Excel</div>
+
+<br><br>
+
+<h3>ภาษาคอมพิวเตอร์</h3>
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">SQL</div>
+
+</div>
+
+<div class="card">
+
+<h2>🍜 โปรเจกต์จบ (Final Project)</h2>
+
+<div class="project">
+
+<h3>เว็บไซต์ร้านก๋วยเตี๋ยวหนานแดง</h3>
+
+<p>
+
+✅ เว็บไซต์สำหรับร้านก๋วยเตี๋ยว ใช้งานง่าย สวยงาม และสะดวกต่อผู้ใช้งาน
+
+</p>
+
+<br>
+
+<p>
+
+<b>📌 เหตุผลที่เลือกทำ</b><br>
+
+เพื่อช่วยแก้ปัญหาการจัดการภายในร้าน เพิ่มความสะดวก รวดเร็ว และตอบโจทย์การใช้งานในยุคดิจิทัล
+
+</p>
+
+<br>
+
+<p>
+
+<b>👨‍💻 หน้าที่ในทีม</b><br>
+
+- พัฒนาเว็บไซต์ด้วย HTML, CSS และ JavaScript<br>
+- วิเคราะห์และหาแนวทางแก้ไขปัญหาของระบบ<br>
+- ออกแบบหน้าตาเว็บไซต์ให้ใช้งานง่าย
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📞 ช่องทางการติดต่อ</h2>
+
+<div class="contact">
+
+<a href="mailto:tonn180751@gmail.com">
+📧 Email
+</a>
+
+<a href="https://instagram.com/ton_18.7" target="_blank">
+📷 Instagram : @ton_18.7
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+Made with ❤️ by <b>ภูมิพัฒน์ ชอบดี</b>
+
+</footer>
+
+</div>
+
 </body>
 </html>
